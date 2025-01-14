@@ -1,0 +1,67 @@
+Problemas Identificados
+
+Problema 1: Senha aceita com menos de 8 caracteres
+
+- **Comportamento esperado:**  
+  O sistema deve exibir a mensagem de erro "A senha deve ter pelo menos 8 caracteres." ao tentar enviar o formulário com uma senha contendo menos de 8 caracteres.
+
+- **Comportamento atual:**  
+  O formulário aceita senhas com menos de 8 caracteres sem exibir a mensagem de erro.
+
+- **Passo a passo para reprodução:**  
+  1. Acesse a página de login: (https://planoaliados.com.br/portal/).  
+  2. Preencha o campo "Usuário" com qualquer dado válido.  
+  3. Preencha o campo "Senha" com menos de 8 caracteres (ex.: `123`).  
+  4. Clique no botão "Entrar."  
+
+- **Dados de entrada utilizados:**  
+  - Usuário: Qualquer dado válido  
+  - Senha: `123`  
+
+- **Ambiente utilizado e versão:**  
+  - **Ambiente:** QA
+  - **URL:** (https://planoaliados.com.br/portal/)  
+  - **Navegador:** Google Chrome  
+
+- **Prioridade:** Alta  
+
+- **Quem identificou:** 
+  Alisson
+
+- **Evidências:**  
+  *Captura de tela*
+  *Vídeo*
+
+---
+
+Problema 2: Botão "Entrar" habilitado com campo Usuário vazio
+
+- **Comportamento esperado:**  
+  O botão "Entrar" deve permanecer desabilitado até que todos os campos obrigatórios sejam preenchidos corretamente.
+
+- **Comportamento atual:**  
+  O botão "Entrar" está habilitado mesmo quando o campo "Usuário" está vazio.
+
+- **Passo a passo para reprodução:**  
+  1. Acesse a página de login: (https://planoaliados.com.br/portal/).  
+  2. Deixe o campo "Usuário" vazio.  
+  3. Preencha o campo "Senha" com qualquer valor válido (ex.: `Senha@1234`).  
+  4. Observe que o botão "Entrar" está habilitado.  
+
+- **Dados de entrada utilizados:**  
+  - Usuário: (vazio)  
+  - Senha: `Senha@1234`  
+
+- **Ambiente utilizado e versão:**  
+  - **Ambiente:** QA  
+  - **URL:** (https://planoaliados.com.br/portal/)  
+  - **Navegador:** Google Chrome  
+
+- **Prioridade:** Alta  
+
+- **Quem identificou:** 
+  Alisson 
+
+- **Evidências:**  
+  *Captura de tela*
+  *Vídeo*
