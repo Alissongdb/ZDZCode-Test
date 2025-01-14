@@ -1,4 +1,4 @@
-# Testes Automatizados com Cypress e Page Objects
+# Testes Automatizados com Cypress
 
 Este projeto foi desenvolvido como parte de um teste técnico para a **ZDZCode**. O objetivo é automatizar cenários de teste para o ambiente fictício da aplicação de login disponível em: [Plano Aliados](https://planoaliados.com.br/portal/).
 
