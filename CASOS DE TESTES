@@ -1,0 +1,85 @@
+###### Casos de Testes e Casos de Testes exploratórios: ######
+
+https://docs.google.com/document/d/e/2PACX-1vTGdNDOx8Pj1foMAurELGMPJrQ44mWyHFOlkODEIKX5DQVaG77-m3mQFRxT7cfFTISuwCWcCfoPKJQY/pub
+
+--
+
+Representatividade:
+
+### CASOS DE TESTES ###
+
+Caso de Teste 1: Validação do campo "Email" com um endereço inválido
+
+Cenário: O campo "Email" deve exibir mensagem de erro ao inserir um endereço inválido.
+Passos para execução:
+Acesse a página do formulário de login.
+Insira um valor inválido no campo "Email" (ex.: alisson@@gmail).
+Insira uma senha válida no campo "Senha" (ex.: Senha@1234).
+Observe o comportamento do botão "Entrar".
+Resultado esperado:
+O botão "Entrar" deve permanecer desabilitado.
+A mensagem "Formato de email inválido." deve ser exibida abaixo do campo "Email".
+
+Caso de Teste 2: Validação do campo "Senha" com menos de 8 caracteres
+  
+Cenário: O campo "Senha" deve exibir mensagem de erro ao inserir uma senha inválida.
+Passos para execução:
+Acesse a página do formulário de login.
+Insira um endereço de email válido no campo "Email" (ex.: alisson@gmail.com).
+Insira um valor com menos de 8 caracteres no campo "Senha" (ex.: 123).
+Observe o comportamento do botão "Entrar".
+Resultado esperado:
+O botão "Entrar" deve permanecer desabilitado.
+A mensagem "A senha deve ter pelo menos 8 caracteres." deve ser exibida abaixo do campo "Senha".
+
+Caso de Teste 3: Login com todos os campos preenchidos corretamente
+
+Cenário: O botão "Entrar" deve ser habilitado quando todos os campos forem preenchidos corretamente.
+Passos para execução:
+Acesse a página do formulário de login.
+Insira um endereço de email válido no campo "Email" (ex.: alisson@email.com).
+Insira uma senha válida no campo "Senha" (ex.: Senha@1234).
+Observe o comportamento do botão "Entrar".
+Resultado esperado:
+O botão "Entrar" deve ser habilitado.
+Não devem ser exibidas mensagens de erro.
+
+--
+
+### CENARIOS EXPLORATORIOS ###
+
+Cenário 1: Submissão do formulário com campos em branco
+Descrição: Testar se o botão "Entrar" permanece desabilitado ao tentar enviar o formulário com os campos "Email" e "Senha" vazios.
+Motivo: Garantir que o formulário não permite envio com campos obrigatórios vazios.
+
+Cenário 2: Inserção de caracteres especiais e strings grandes
+Descrição: Testar o comportamento do campo "Email" ao inserir caracteres especiais (ex.: !#$%^&*()) e grandes strings.
+Motivo: Verificar se o campo "Email" possui validação de tamanho e tipo de caractere.
+
+Cenário 3: Inserção de espaços em branco nos campos
+Descrição: Testar o comportamento ao inserir apenas espaços em branco no campo "Email" e "Senha".
+Motivo: Verificar se o sistema valida espaços em branco como entradas inválidas e exibe as mensagens de erro corretas.
+
+Cenário 4: Inserção de emojis
+Descrição: Testar o comportamento ao inserir emojis nos campos "Email" e "Senha".
+Motivo: Avaliar entradas incomuns
+
+Cenário 5: Limite de tamanho dos campos
+Descrição: Verificar se há um limite máximo de caracteres nos campos "Email" e "Senha" (ex.: tentar inserir 500 caracteres).
+Motivo: Garantir que o sistema não permita entradas que excedam os limites
+
+Cenário 6: Submissão do formulário várias vezes rapidamente
+Descrição: Tentar clicar no botão "Entrar" várias vezes (caso esteja habilitado) para verificar se o sistema impede várias submissões.
+Motivo: Prevenir falhas que possam ocorrer devido a submissões duplicadas.
+
+Cenário 7: Copiar e colar dados nos campos
+Descrição: Testar o comportamento ao copiar e colar valores nos campos "Email" e "Senha".
+Motivo: Verificar se o sistema mantém as validações ao utilizar dados copiados de outros lugares
+
+Cenário 8: Teste de mensagens de erro cumulativas
+Descrição: Inserir um email inválido e uma senha curta ao mesmo tempo, para verificar se ambas as mensagens de erro são exibidas corretamente.
+Motivo: Garantir que o sistema exiba todas as mensagens de erro ao mesmo tempo
+
+Cenário 9: Uso de navegadores e dispositivos diferentes
+Descrição: Testar o formulário em navegadores e dispositivos diferentes
+Motivo: Validar que o formulário funcione em diferentes plataformas
