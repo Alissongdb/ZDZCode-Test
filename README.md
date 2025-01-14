@@ -3,6 +3,10 @@
 Os casos de testes manuais e exploratórios estão no arquivo CASOS DE TESTES na raiz do projeto.
 No arquivo existe um link publico com os casos de testes que levam ate o google planilhas, porem os mesmos estao dentro deste arquivo também, caso fique mais fácil para se ler.
 
+# Registro de Defeitos
+
+Os defeitos estão documentados dentro do arquivo REGISTRO DE DEFEITOS na raíz do projeto.
+
 
 # Testes Automatizados com Cypress
 
